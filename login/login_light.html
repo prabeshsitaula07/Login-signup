@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #bdbdbd;
+            background-size: cover;
+            display: flex;
+            height: 100vh;
+            font-family: system-ui;
+            
+            
+        }
+        .login{
+              
+              height: 370px;
+              max-width: 380px;
+              min-width: fit-content;
+              border-radius: 12px;
+              box-shadow: 0 3px 30px black;
+              background-color: white;
+              margin: auto;
+              position: absolute;
+              right: 0;
+              left: 0;
+              bottom: 0;
+              top: 0;
+ }
+
+        .login form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            margin: auto;
+            padding: 20px;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+
+        }
+        .h{
+            width: 100%;
+            height: 52px;
+            margin: 4px;
+            border-radius: 3px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+            /* border: 1px black; */
+            
+
+        }
+         #log:hover{
+            cursor: pointer;
+            background-color: rgb(3, 0, 158);
+            transition: 1s;
+        }    
+         #sign:hover{
+            cursor: pointer;
+            background-color: #3e8e41;
+            transition: 1s;
+            
+        }
+        hr{
+            height: 0px;
+            width: 154px;
+            color: black;
+        }
+        .or{
+            display: flex;
+            flex-direction: row;
+            height: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        h5{
+            padding: 10px;
+            color: black;
+        }
+        #log{
+            background-color: blue;
+            color: black;
+            font-size: 19px;
+            border: 0.3px;
+            font-weight: bold;
+            
+        }
+        #sign{
+            background-color: green;
+            color: black;
+            font-size: 19px;
+            width: 153px;
+            border: 0.3px;
+            font-weight: bold;
+        }
+        h4 a{
+            color: black;
+            text-align: center;
+            text-decoration: none;
+        }
+        h4 a:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        input[type="text"],
+        input[type="password"]{
+            border: 1px solid #ccc;
+            padding: 5px;
+            color: black;
+        }
+        :root{
+    --background-color: white;
+    --text-color: black; 
+    --blog-color: white;
+    --btn-color: #0151cc; 
+}
+
+ul{
+    list-style-type: none;
+}
+.navbar{
+    background: var(--blog-color);
+    height: 60px;
+    color: var(--blog-color);
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 3px 5px var(--text-color);
+    z-index: 999;
+}
+
+
+.navbar li a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold
+
+}
+.navbar li a:hover{
+    color: lightblue;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+        margin-left: 20px;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+    
+            <ul class="nav" id="navl"> 
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">CV</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+    <div class="login">
+        <form action="" align="center">
+            <input type="text" placeholder="Enter email or phone" class="h">
+            
+            <input type="password" placeholder="Password" class="h">
+            
+            <input type="submit" value="Log In" class="h" id="log">
+
+            <h4><a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0" target="_blank"> Forgot password?</a></h4>
+            <div class="or"><hr> <h5>or</h5> <hr></div>
+            <a href="sd.html"><input type="button" value="Sign up" class="h" id="sign"></a>
+        </form>
+    </div>
+
+</body>
+</html>

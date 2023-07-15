@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+body{
+  background:  #201f1f;
+  font-family: system-ui;
+}
+form {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 30px white;
+  width: 400px;
+  background: black;
+  position: absolute;
+  top: 140px;
+}
+
+@media(max-width: 465px){
+  form{
+    width: fit-content;
+    margin: 10px;
+  }
+}
+
+span{
+    color: rgb(255, 0, 0);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+}
+
+input[type="text"]{
+  height: 40px;
+  font-size: 17px;
+
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+  margin: 10px;
+  top: -3px;
+  position: relative;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(4, 150, 4);
+}
+
+
+h1{
+    letter-spacing: 2px;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+input[type="file"]{
+  padding-bottom: 20px;
+  color: white;
+}
+:root{
+  --background-color: #201f1f;
+    --text-color: white; 
+    --blog-color: black;
+    --btn-color: #0151cc; 
+}
+
+ul{
+    list-style-type: none;
+}
+.navbar{
+    background: var(--blog-color);
+    height: 60px;
+    color: var(--blog-color);
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 3px 5px var(--text-color);
+    z-index: 999;
+}
+
+
+.navbar li a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold
+
+}
+.navbar li a:hover{
+    color: lightblue;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+        margin-left: 20px;
+}
+
+.sign-up-form{
+  width: 100%;
+    display: flex;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+
+        <ul class="nav" id="navl"> 
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">CV</a></li>
+            <li><a href="#">Log In</a></li>
+        </ul>
+    </div>
+</nav>
+</div>
+    <div class="sign-up-form">
+        <form action="darkindex.html">
+            <label for="firstname">First Name <span>*</span>:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="enter your first name" required><br>
+          
+            <label for="middlename">Middle Name :</label>
+            <input type="text" id="middlename" name="middlename" placeholder="enter your middlename"><br>
+          
+            <label for="lastname">Last Name <span>*</span>:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="enter your last name" required><br>
+          
+            <label for="contact">Contact Number <span>*</span>:</label>
+            <input type="text" id="contact" name="contact" placeholder="enter your contact number
+            " required><br>
+
+            <label>Gender <span>*</span>:</label>
+          <div class="row">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+        </div>
+          
+            <label for="dob">Date of Birth <span>*</span>:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="file_upload">Insert image <span>*</span></label>
+            <input type="file" id="fileupload" name="file" accept="image/png, image/gif, image/jpeg" required>
+
+          <div class="row">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to the <a href="https://www.iubenda.com/en/help/2859-terms-and-conditions-when-are-they-needed#:~:text=%E2%80%9CTerms%20and%20Conditions%E2%80%9D%20is%20the,%E2%80%9D%20or%20%E2%80%9CLegal%20Notes%E2%80%9D.">terms and conditions</a>.</label>
+        </div>
+
+            <input type="submit" value="Submit">
+          </form>
+          
+    </div>
+</body>
+</html>
